@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ManvirBooks.DataAccess\ManvirBooks.DataAccess.csproj" />
     <ProjectReference Include="..\ManvirBooks.Models\ManvirBooks.Models.csproj" />
+    <ProjectReference Include="..\ManvirBooks.Utility\ManvirBooks.Utility.csproj" />
   </ItemGroup>
 
 </Project>

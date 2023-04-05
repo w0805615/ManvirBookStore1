@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.32" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ManvirBooks.Models\ManvirBooks.Models.csproj" />
+    <ProjectReference Include="..\ManvirBooks.Utility\ManvirBooks.Utility.csproj" />
+  </ItemGroup>
+
 </Project>
