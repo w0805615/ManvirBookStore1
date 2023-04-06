@@ -213,3 +213,11 @@ As explained I saved the README.txt file for restarting the whole assignment 2
 
 22:40
 Completed the assignment till Assignment 2 Part 2.
+
+2023-04-06
+1643
+Added a new MVC Controller-Empty inside Areas/Admin/Controller ="CategoryController.cs" and Modified
+ERROR: IUnitOfWork not found
+SOLVED!
+made IUnitOfWork.cs interface public.
+CategoryRepository

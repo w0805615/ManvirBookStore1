@@ -6,5 +6,6 @@ namespace ManvirBooks.DataAccess.Repository.IRepository
 {
     public interface ICategoryRepository
     {
+        object GetAll();
     }
 }

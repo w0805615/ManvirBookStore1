@@ -20,6 +20,11 @@ namespace ManvirBooks.DataAccess.Repository
 
         }
 
+        public object GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Category category)
         {
             var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
