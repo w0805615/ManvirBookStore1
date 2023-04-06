@@ -7,7 +7,7 @@ using ManvirBookStore.DataAccess.Data;
 
 namespace ManvirBooks.DataAccess.Repository
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _db;
 

@@ -221,3 +221,11 @@ ERROR: IUnitOfWork not found
 SOLVED!
 made IUnitOfWork.cs interface public.
 CategoryRepository
+
+Addded a new RazorView in Category folder in Area/Admin/Views
+Modified as given in Assignment 2 folder
+
+1726
+ERROR: 
+System.NullReferenceException: 'Object reference not set to an instance of an object.'
+db was null.
