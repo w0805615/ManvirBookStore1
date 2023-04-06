@@ -210,3 +210,6 @@ PROJECT RUN!
 Started the project again
 REASON: I was not able to see the new projects in the github so starting it again
 As explained I saved the README.txt file for restarting the whole assignment 2
+
+22:40
+Completed the assignment till Assignment 2 Part 2.
