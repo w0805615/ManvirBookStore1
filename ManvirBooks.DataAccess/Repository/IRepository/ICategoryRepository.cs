@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ManvirBooks.DataAccess.Repository.IRepository
 {
-    interface ICategoryRepository
+    public interface ICategoryRepository
     {
     }
 }
