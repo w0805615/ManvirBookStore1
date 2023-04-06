@@ -15,12 +15,12 @@ namespace ManvirBooks.DataAccess.Repository
     {
         private readonly ApplicationDbContext _db;
         private static string ConnectionString = "";
-        private ApplicationDbContext db;
+      
 
         public SP_Call(ApplicationDbContext _db)
         {
-            _db = db;
-            ConnectionString = db.Database.GetDbConnection().ConnectionString;
+            _db = _db;
+            ConnectionString = _db.Database.GetDbConnection().ConnectionString;
         }
 
         public void Dispose()

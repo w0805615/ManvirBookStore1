@@ -26,7 +26,7 @@ namespace ManvirBookStore.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.Category.GetAll();
+            var allObj = _unitOfWork.Category;
             return Json(new { data = allObj });
         }
         #endregion

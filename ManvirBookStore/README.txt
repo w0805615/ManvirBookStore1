@@ -229,3 +229,6 @@ Modified as given in Assignment 2 folder
 ERROR: 
 System.NullReferenceException: 'Object reference not set to an instance of an object.'
 db was null.
+
+1840
+Solved the error. there was error in the db in file SP_Call.cs    (db should be written _db)
