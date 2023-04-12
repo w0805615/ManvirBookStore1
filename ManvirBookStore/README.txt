@@ -237,3 +237,10 @@ Solved the error. there was error in the db in file SP_Call.cs    (db should be 
 1304
 Created a new link in navigation to add categories
 Modified index.cshtml to add icons in the category section.
+
+1342
+Got an ERROR: Get have no definition in ICategoryRepositry.cs
+Added :IRepository<Category> in the file
+Error Solved!
+
+Added a new Razor View in the Upsert 
