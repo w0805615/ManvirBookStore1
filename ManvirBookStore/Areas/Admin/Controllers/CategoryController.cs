@@ -1,4 +1,5 @@
 ﻿using ManvirBooks.DataAccess.Repository.IRepository;
+using ManvirBooks.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -22,12 +23,32 @@ namespace ManvirBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult Upsert(int? id)
+        {
+            CategoryController category = new Category();
+            if(id == null)
+            {
+                return View(category);
+            }
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if(category == null)
+            {
+                return NotFound();
+            }
+            return View();
+        }
+
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
         {
             var allObj = _unitOfWork.Category;
             return Json(new { data = allObj });
+        }
+
+        public static implicit operator CategoryController(Category v)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

@@ -232,3 +232,8 @@ db was null.
 
 1840
 Solved the error. there was error in the db in file SP_Call.cs    (db should be written _db)
+
+2023-04-12
+1304
+Created a new link in navigation to add categories
+Modified index.cshtml to add icons in the category section.
