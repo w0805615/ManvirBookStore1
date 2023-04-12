@@ -261,3 +261,8 @@ EVERYTHING WORKS GREAT NOW
 Created a POST method in CategoryController.cs
 Removed save method from CategoryRepository
 Added save method in IUnitOfWork.cs 
+
+Added a HTTPDelete in the CategoryController.cs
+added delete method in category.js
+Added delete function code in the CategoryController.cs
+
