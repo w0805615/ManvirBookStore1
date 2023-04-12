@@ -244,3 +244,10 @@ Added :IRepository<Category> in the file
 Error Solved!
 
 Added a new Razor View in the Upsert 
+
+1411
+Created new RazorView in the Views>Shared
+_EditAndBackToListButton.cshtml
+_CreateAndBackToListButton.cshtml
+Tried adding new cotegory but got another error
+Still trying to figure that out
