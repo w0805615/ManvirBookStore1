@@ -251,3 +251,13 @@ _EditAndBackToListButton.cshtml
 _CreateAndBackToListButton.cshtml
 Tried adding new cotegory but got another error
 Still trying to figure that out
+
+1920
+SOLVED using statement was not correct
+
+
+EVERYTHING WORKS GREAT NOW
+
+Created a POST method in CategoryController.cs
+Removed save method from CategoryRepository
+Added save method in IUnitOfWork.cs 

@@ -1,14 +1,11 @@
-﻿using ManvirBooks.DataAccess.Repository.IRepository;
+﻿using Microsoft.AspNetCore.Mvc;
+using ManvirBookStore.DataAccess.Data;
+using ManvirBooks.DataAccess.Repository.IRepository;
 using ManvirBooks.Models;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 
 namespace ManvirBookStore.Areas.Admin.Controllers
 {
+
     [Area("Admin")]
     public class CategoryController : Controller
     {
@@ -23,33 +20,62 @@ namespace ManvirBookStore.Areas.Admin.Controllers
             return View();
         }
 
+
         public IActionResult Upsert(int? id)
         {
-            CategoryController category = new Category();
-            if(id == null)
+            Category category = new Category();
+            if (id == null)
             {
+                //this is for create
                 return View(category);
             }
             category = _unitOfWork.Category.Get(id.GetValueOrDefault());
-            if(category == null)
+            if (category == null)
             {
                 return NotFound();
             }
-            return View();
+            return View(category); 
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Upsert(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                if (category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+                }
+
+                else
+                {
+                    _unitOfWork.Category.Update(category);
+                }
+
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(category);
         }
 
         #region API CALLS
         [HttpGet]
+
+
         public IActionResult GetAll()
-        {
-            var allObj = _unitOfWork.Category;
-            return Json(new { data = allObj });
+        { 
+                var allObj = _unitOfWork.Category;
+                return Json(new { data = allObj });
+            }
+
+            #endregion  
         }
 
-        public static implicit operator CategoryController(Category v)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
     }
-}
+
+
+        
