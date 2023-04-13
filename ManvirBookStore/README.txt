@@ -266,3 +266,4 @@ Added a HTTPDelete in the CategoryController.cs
 added delete method in category.js
 Added delete function code in the CategoryController.cs
 
+Found that there was GetAll() function was missing in CategoryController.cs So just added that according to the instructions.

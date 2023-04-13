@@ -68,7 +68,7 @@ namespace ManvirBookStore.Areas.Admin.Controllers
 
         public IActionResult GetAll()
         { 
-                var allObj = _unitOfWork.Category;
+                var allObj = _unitOfWork.Category.GetAll();
                 return Json(new { data = allObj });
             }
 
