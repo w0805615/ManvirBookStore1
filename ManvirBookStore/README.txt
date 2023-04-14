@@ -288,3 +288,10 @@ ERROR solved changed the name of database in appsettings.json and it worked
 created a interface in IRepository named "ICoverTypeRepository.cs"
 created a class in Repository named "CoverTypeRepository.cs"
 involved the using statements to resolve any errors and extended classes and interfaces
+
+1943
+
+Modified two files UnitOfWork and IUnitOfWork
+added  public ICoverTypeRepository CoverType { get; private set; } in UnitOfWork
+added    ICoverTypeRepository CoverType { get; } in IUnitOfWork
+

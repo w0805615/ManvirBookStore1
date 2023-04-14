@@ -22,6 +22,7 @@ namespace ManvirBooks.DataAccess.Repository
         public ICategoryRepository Category { get; private set; }
   
         public ISP_Call SP_Call { get; private set; }
+        public ICoverTypeRepository CoverType { get; private set; }
 
         public void Dispose()
         {
