@@ -274,3 +274,5 @@ ASSIGNMENT 2 PART II COMPLETED!
 2023-04-13
 2041
 ASSIGNMENT 2 PART III Starting
+Added a class in Repository named "CoverTypeRepository"
+Modifying files
