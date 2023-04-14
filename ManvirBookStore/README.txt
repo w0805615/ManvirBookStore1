@@ -267,3 +267,10 @@ added delete method in category.js
 Added delete function code in the CategoryController.cs
 
 Found that there was GetAll() function was missing in CategoryController.cs So just added that according to the instructions.
+Everything works perfect 
+I can delete update and add new category without anty ERROR!
+ASSIGNMENT 2 PART II COMPLETED!
+
+2023-04-13
+2041
+ASSIGNMENT 2 PART III Starting
