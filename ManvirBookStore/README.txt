@@ -277,4 +277,8 @@ ASSIGNMENT 2 PART III Starting
 Added a class in Models folder named "CoverType.cs"
 Modifying files
 added migration
+migration file names: 20230414195934_AddCoverTypeToDb
+
 updated database
+there is already an object named 'AspNetRoles' in the database
+ERROR solved changed the name of database in appsettings.json and it worked
