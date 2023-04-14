@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ManvirBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230414192127_AddCoverTypeToDb")]
+    [Migration("20230414192507_AddCoverTypeToDb")]
     partial class AddCoverTypeToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
