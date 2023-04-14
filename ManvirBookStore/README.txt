@@ -282,3 +282,9 @@ migration file names: 20230414195934_AddCoverTypeToDb
 updated database
 there is already an object named 'AspNetRoles' in the database
 ERROR solved changed the name of database in appsettings.json and it worked
+
+2023-04-14
+1935
+created a interface in IRepository named "ICoverTypeRepository.cs"
+created a class in Repository named "CoverTypeRepository.cs"
+involved the using statements to resolve any errors and extended classes and interfaces
