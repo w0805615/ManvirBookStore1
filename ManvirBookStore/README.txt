@@ -295,3 +295,5 @@ Modified two files UnitOfWork and IUnitOfWork
 added  public ICoverTypeRepository CoverType { get; private set; } in UnitOfWork
 added    ICoverTypeRepository CoverType { get; } in IUnitOfWork
 
+Updated-database
+\SUCCESSFULL!
