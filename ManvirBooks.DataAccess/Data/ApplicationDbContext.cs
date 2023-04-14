@@ -14,6 +14,7 @@ namespace ManvirBookStore.DataAccess.Data
         {
         }
         public DbSet<Category> Categories { get; set; }
-        public object Covers { get; internal set; }
+        public DbSet<CoverType> CoverTypes { get; set; }
+    
     }
 }
