@@ -317,3 +317,11 @@ added migration
 migration file names: 20230415010459_AddProductToDb
 
 updated database
+
+2114
+
+created a interface in IRepository named "IProductRepository.cs"
+created a class in Repository named "ProductRepository.cs"
+Modified two files UnitOfWork and IUnitOfWork
+added  public ICoverTypeRepository Product { get; private set; } in UnitOfWork
+added    ICoverTypeRepository Product { get; } in IUnitOfWork
