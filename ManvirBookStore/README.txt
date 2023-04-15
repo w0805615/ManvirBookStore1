@@ -306,3 +306,14 @@ Then created a new js file named "covertype.js " and modified as given instructi
 2018
 Created a new Controller named "CoverTypeController.cs"
 modified according to given instructions
+
+added a new view named "Upsert.cshtml"
+
+2059
+Added a class in Models folder named "Product.cs"
+Modifying file named ApplicationDbContext.cs
+
+added migration
+migration file names: 20230415010459_AddProductToDb
+
+updated database
