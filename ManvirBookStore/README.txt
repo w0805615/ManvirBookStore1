@@ -297,3 +297,12 @@ added    ICoverTypeRepository CoverType { get; } in IUnitOfWork
 
 Updated-database
 \SUCCESSFULL!
+
+2005
+Created a new folder in Vieews named "CoverType"
+added a new razor view in it caleed "Index.cshtml"
+Then created a new js file named "covertype.js " and modified as given instructions
+
+2018
+Created a new Controller named "CoverTypeController.cs"
+modified according to given instructions
