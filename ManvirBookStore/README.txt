@@ -325,3 +325,9 @@ created a class in Repository named "ProductRepository.cs"
 Modified two files UnitOfWork and IUnitOfWork
 added  public ICoverTypeRepository Product { get; private set; } in UnitOfWork
 added    ICoverTypeRepository Product { get; } in IUnitOfWork
+
+2146
+
+Followed same instructions as Category to form the Product page And completed the assignmnet 2 part III section(2)
+everthing looks good till now
+no errors!
