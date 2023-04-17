@@ -336,3 +336,7 @@ no errors!
 2023-04-17
 1643
 added validation migrations to the product.cs class in .Models project and set several fields required and then uppdated the databse succesfully.
+
+1701
+Created a new class in ViewModels folder in th e.Models project named "ProductVM.cs"
+Modified according to the given instructiobns and installed the packaged to solve the error
