@@ -315,6 +315,7 @@ Modifying file named ApplicationDbContext.cs
 
 added migration
 migration file names: 20230415010459_AddProductToDb
+validation file timestamp: 20230417204011_addValidationToProduct
 
 updated database
 
@@ -331,3 +332,7 @@ added    ICoverTypeRepository Product { get; } in IUnitOfWork
 Followed same instructions as Category to form the Product page And completed the assignmnet 2 part III section(2)
 everthing looks good till now
 no errors!
+
+2023-04-17
+1643
+added validation migrations to the product.cs class in .Models project and set several fields required and then uppdated the databse succesfully.
