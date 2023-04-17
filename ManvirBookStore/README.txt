@@ -340,3 +340,6 @@ added validation migrations to the product.cs class in .Models project and set s
 1701
 Created a new class in ViewModels folder in th e.Models project named "ProductVM.cs"
 Modified according to the given instructiobns and installed the packaged to solve the error
+
+1713
+Modified th ProductController.cs file as the given instructions. So the IActionResult Upsert calls to the ProductVM view model

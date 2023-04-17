@@ -1,7 +1,9 @@
 ﻿using ManvirBooks.DataAccess.Repository.IRepository;
 using ManvirBooks.Models;
+using ManvirBooks.Models.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,54 +30,49 @@ namespace ManvirBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)
         {
-            Product product = new Product();
+            ProductVM productVM = new ProductVM()
+            {
+                Product = new Product(),
+                CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+
+                }),
+
+                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+
+                }),
+            };
+
             if (id == null)
             {
-                //this is for create
-                return View(product);
+                return View(productVM);
             }
-            product = _unitOfWork.Product.Get(id.GetValueOrDefault());
-            if (product == null)
+
+            productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
+            if (productVM.Product == null)
             {
                 return NotFound();
             }
-            return View(product); //remember
+            return View(productVM);
+
         }
 
-        //Use HTTP POST to define the post-action method
-        /*[HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Product product)
-        {
-            if (ModelState.IsValid) //Checks all the Validation in the model (e.g. Name Required) to increase security
-            {
-                if (product.Id == 0)
-                {
-                    _unitOfWork.Product.Add(product);
-                }
-                else
-                {
-                    _unitOfWork.Product.Update(product);
-                }
-                _unitOfWork.Save();
-                return RedirectToAction(nameof(Index)); //To see all the Categories
-            }
-            return View(product);
-        }*/
-
-
-
-        //APT calls here
+        //API  Calls Here
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
         {
-            //return NotFound();
             var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category, Covertype");
             return Json(new { data = allObj });
         }
 
         [HttpDelete]
+
         public IActionResult Delete(int id)
         {
             var objFromDb = _unitOfWork.Product.Get(id);
@@ -83,10 +80,12 @@ namespace ManvirBookStore.Areas.Admin.Controllers
             {
                 return Json(new { success = false, message = "Error while deleting" });
             }
+
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
-            return Json(new { success = true, message = "Delete Successful" });
+            return Json(new { success = true, message = "Delete successful" });
         }
         #endregion
+
     }
 }
