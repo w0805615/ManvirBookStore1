@@ -345,3 +345,15 @@ Modified according to the given instructiobns and installed the packaged to solv
 Modified th ProductController.cs file as the given instructions. So the IActionResult Upsert calls to the ProductVM view model
 
 2023-04-19
+
+COverType Correction
+Layout
+UnitOfWork
+Upsert.cshtml
+
+Product Corrections
+product.js added delte method
+Upsert.cs added Covertype list to show listitems in product page.
+
+ERROR
+DataTables warning: table id=tblData - Requested unknown parameter 'price' for row 0, column 2.
