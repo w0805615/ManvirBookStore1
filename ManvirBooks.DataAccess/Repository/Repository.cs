@@ -42,7 +42,7 @@ namespace ManvirBooks.DataAccess.Repository
             {
                 foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
-                    query = query.Include(includeProp);
+                    query = query;
                 }
             }
 

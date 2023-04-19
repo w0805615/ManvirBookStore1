@@ -49,6 +49,7 @@ namespace ManvirBookStore.Areas.Admin.Controllers
                 if (coverType.Id == 0)
                 {
                     _unitOfWork.CoverType.Add(coverType);
+                    _unitOfWork.Save();
                 }
                 else
                 {

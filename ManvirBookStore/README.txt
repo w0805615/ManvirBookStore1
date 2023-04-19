@@ -33,7 +33,7 @@ Created a README.md file in the github and pulled it to the VS2019
 
 2023-03-09
 1414
-Choosed a Darkly theme from the bootswatch.com
+Choosed a Lumen theme from the bootswatch.com
 Renamed the older bootstrap file 
 Added new bootstrap.css in 
 Lib > bootstrap > dist > css > bootstrap.css
@@ -343,3 +343,5 @@ Modified according to the given instructiobns and installed the packaged to solv
 
 1713
 Modified th ProductController.cs file as the given instructions. So the IActionResult Upsert calls to the ProductVM view model
+
+2023-04-19
